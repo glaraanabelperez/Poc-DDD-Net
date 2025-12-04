@@ -1,23 +1,23 @@
-﻿using Aplication.Interfaces;
-using Domain.Events;
+﻿using Aplication.Events;
+using Aplication.Interfaces;
 using Infraestructure.IntegrationCommand;
 using MediatR;
 
 namespace Infra.Events.Handlers
 {
-    public class ProductCreatedIntegrationEventHandler
+    public class ProductCreatedNotificationEventHandler
     : INotificationHandler<ProductCreatedNotificationEvent>
     {
         private readonly IRabbitPublisher _publisher;
 
-        public ProductCreatedIntegrationEventHandler(IRabbitPublisher publisher)
+        public ProductCreatedNotificationEventHandler(IRabbitPublisher publisher)
         {
             _publisher = publisher;
         }
 
         public async Task Handle(ProductCreatedNotificationEvent notification, CancellationToken cancellationToken)
         {
-            var evt = new ProductCreatedIntegrationEvent(
+            var evt = new ProductCreatedIntegration(
             notification.name,
             notification.stock,
             notification.desposito,

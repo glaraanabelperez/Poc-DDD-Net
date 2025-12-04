@@ -1,5 +1,4 @@
 using Aplication.Commands.ProductCommands;
-using Domain.Agregates;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 

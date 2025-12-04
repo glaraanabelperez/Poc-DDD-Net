@@ -1,8 +1,8 @@
 ﻿using Aplication.Commands.ProductCommands;
 using Domain.Agregates;
 using Domain.Repository;
-using Domain.Events;
 using MediatR;
+using Domain.Events;
 
 namespace Aplication.Handlers
 {

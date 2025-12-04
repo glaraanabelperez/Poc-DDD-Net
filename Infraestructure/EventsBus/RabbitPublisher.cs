@@ -42,7 +42,7 @@ namespace Infra.Events.EventBus
                 body: body
             );
 
-            Console.WriteLine($"[Publisher] Evento enviado a Rabbit → {json}");
+            System.Diagnostics.Debug.WriteLine($"[Publisher] Evento enviado a Rabbit → {json}");
 
             return Task.CompletedTask;
         }

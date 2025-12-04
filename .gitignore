@@ -1,0 +1,12 @@
+﻿################################################################################
+# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
+################################################################################
+
+/Aplication
+/.vs
+/ConsolaConsumer
+/Domain
+/Domain/bin/Debug/net8.0/Domain.deps.json
+/Infraestructure/bin/Debug/net8.0
+/Poc_DDD/.gitignore
+/Infraestructure/obj

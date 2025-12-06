@@ -1,4 +1,5 @@
 using Aplication;
+using Infraestricture.Persistencia.DBContext.AppDBContext;
 using Infraestructure;
 using Infrastructure;
 using static System.Net.Mime.MediaTypeNames;
@@ -7,6 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 var services = builder.Services;
+
+//Conexion BBDD
 
 // Application
 services.AddMediatR(cfg =>

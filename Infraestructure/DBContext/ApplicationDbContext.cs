@@ -1,7 +1,6 @@
 ﻿
-using Domain.Agregates;
+using Infraestructure.DBContext.Entidades;
 using Microsoft.EntityFrameworkCore;
-using Order.Persistence.Database.Configurations;
 
 namespace Infraestricture.Persistencia.DBContext.AppDBContext
 {

@@ -1,4 +1,4 @@
-using Aplication.Commands.ProductCommands;
+using Aplication.Handlers.Command;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 

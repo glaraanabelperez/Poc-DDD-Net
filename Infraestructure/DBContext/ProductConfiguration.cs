@@ -1,9 +1,9 @@
 ﻿
-using Domain.Agregates;
+using Infraestructure.DBContext.Entidades;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Order.Persistence.Database.Configurations
+namespace Infraestricture.Persistencia.DBContext
 {
     public class ProductConfiguration : IEntityTypeConfiguration<Product>
     {
@@ -14,18 +14,18 @@ namespace Order.Persistence.Database.Configurations
         {
             builder.ToTable("Product");
 
-            builder.HasKey(x => x.Id);
+            builder.HasKey(x => x.id);
 
-            builder.Property(x => x.Name)
-                   .HasMaxLength(200)
-                   .IsRequired();
+            //builder.Property(x => x.Name)
+            //       .HasMaxLength(200)
+            //       .IsRequired();
 
-            builder.OwnsOne(p => p.Stock, stock =>
-            {
-                stock.Property(s => s.Quantity)
-                     .HasColumnName("Stock")
-                     .IsRequired();
-            });
+            //builder.OwnsOne(p => p.Stock, stock =>
+            //{
+            //    stock.Property(s => s.Quantity)
+            //         .HasColumnName("Stock")
+            //         .IsRequired();
+            //});
         }
 
 

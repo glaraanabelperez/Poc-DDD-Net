@@ -1,6 +1,4 @@
-﻿
-
-namespace Aplication.Interfaces
+﻿namespace Infraestructure.Interfaces
 {
     public interface IRabbitPublisher
     {

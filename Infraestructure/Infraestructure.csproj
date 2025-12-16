@@ -16,7 +16,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Aplication\Aplication.csproj" />
-    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Service\" />
   </ItemGroup>
 
 </Project>

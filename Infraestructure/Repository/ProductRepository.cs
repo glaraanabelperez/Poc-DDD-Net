@@ -1,31 +1,28 @@
-﻿using Domain.Agregates;
-using Domain.Repository;
+﻿
+using Aplication.IRepository;
+using Aplication.Models;
 using Infraestricture.Persistencia.DBContext.AppDBContext;
-using Microsoft.EntityFrameworkCore.Storage;
 
-
-namespace Infraestructure.Repository
+namespace Infraestructure.Querys
 {
-    public class ProductRepository : IRepository
+    public class ProductRepository: IProductRepository
     {
-        //Inyeccion dbContext
-
-        public  async Task<Response> AddAsync(Product product, CancellationToken cancellationToken)
+        private readonly ApplicationDbContext _context;
+        public ProductRepository(ApplicationDbContext context)
         {
-            Response res = new Response() { Data = product };
-
-            //Persistencia
-
-            return  res;
+            _context = context;
         }
 
-        private object SetObjectToCreate(object request)
+        public Task<ProductDto> Add(string productId)
         {
             throw new NotImplementedException();
         }
 
-        public Task<Product> GetAsync(long productId)
+        Task<bool> IProductRepository.ExistProductByCodioSerie(long serie)
         {
+            //var queryable = _context.Product
+            //              .Contains(x => x.serie.Equals(serie));
+            //return true;
             throw new NotImplementedException();
         }
     }

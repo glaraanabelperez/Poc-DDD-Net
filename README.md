@@ -31,7 +31,6 @@ Dependencias:
 
  Infrastructure → Application
 
- Infrastructure → Domain
  
 
 📦 # Tecnologías Principales
@@ -40,7 +39,7 @@ Dependencias:
 
 Framework principal del proyecto.
 
-🟢 CQRS con MediatR
+🟢 CQRS, MediatR
 
 Separación entre comandos y consultas.
 
@@ -146,4 +145,3 @@ Tests unitarios y de integración
 Agregar un contexto mas complejo.
 
 
-<img width="523" height="663" alt="image" src="https://github.com/user-attachments/assets/2d9761db-8add-4c9e-a781-fc8b31429b2d" />

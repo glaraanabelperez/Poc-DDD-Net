@@ -1,4 +1,7 @@
-﻿📘  ## POC – .NET Core | DDD + CQRS + RabbitMQ + EF Core
+﻿
+DESARROLLO Y POC EN PROCESO
+
+📘  ## POC – .NET Core | DDD + CQRS + RabbitMQ + EF Core
 
 
 
@@ -31,7 +34,6 @@ Dependencias:
 
  Infrastructure → Application
 
- Infrastructure → Domain
  
 
 📦 # Tecnologías Principales
@@ -40,7 +42,7 @@ Dependencias:
 
 Framework principal del proyecto.
 
-🟢 CQRS con MediatR
+🟢 CQRS, MediatR
 
 Separación entre comandos y consultas.
 

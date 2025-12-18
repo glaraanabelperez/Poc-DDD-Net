@@ -4,5 +4,8 @@
     {
         public long id { get; set; }
         public string serie { get; set; }
+
+        //Completar campos/
+
     }
 }

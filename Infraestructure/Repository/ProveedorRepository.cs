@@ -3,15 +3,15 @@ using Infraestricture.Persistencia.DBContext.AppDBContext;
 
 namespace Infraestructure.Repository
 {
-    public class DepositoRepository : IDepositoRepository
+    public class ProveedorRepository : IProveedorRepository
     {
         private readonly ApplicationDbContext _context;
-        public DepositoRepository(ApplicationDbContext context)
+        public ProveedorRepository(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        public Task<bool> ExistDepositoId(long id)
+        public Task<bool> ExistProveedorId(long id)
         {
             throw new NotImplementedException();
         }     

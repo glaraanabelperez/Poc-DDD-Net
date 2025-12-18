@@ -16,16 +16,8 @@ namespace Infraestricture.Persistencia.DBContext
 
             builder.HasKey(x => x.id);
 
-            //builder.Property(x => x.Name)
-            //       .HasMaxLength(200)
-            //       .IsRequired();
+            //Completar campos/
 
-            //builder.OwnsOne(p => p.Stock, stock =>
-            //{
-            //    stock.Property(s => s.Quantity)
-            //         .HasColumnName("Stock")
-            //         .IsRequired();
-            //});
         }
 
 

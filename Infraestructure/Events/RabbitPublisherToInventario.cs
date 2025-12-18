@@ -1,15 +1,15 @@
-﻿using Aplication.Interfaces;
+﻿using Infraestructure.Interfaces;
 using RabbitMQ.Client;
 using System.Text;
 using System.Text.Json;
 
 namespace Infra.Events.EventBus
 {
-    public class RabbitPublisher : IRabbitPublisher
+    public class RabbitPublisherToInventario : IRabbitPublisherToInventario
     {
         private readonly IConnection _connection;
 
-        public RabbitPublisher(CancellationToken cancellationToken = default)
+        public RabbitPublisherToInventario(CancellationToken cancellationToken = default)
         {
             var factory = new ConnectionFactory
             {

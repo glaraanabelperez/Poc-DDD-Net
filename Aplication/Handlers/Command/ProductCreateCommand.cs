@@ -1,5 +1,5 @@
-﻿using Aplication.Validations;
-using Domain.Agregates;
+﻿using Aplication.Models;
+using Aplication.Validations;
 using MediatR;
 using System.ComponentModel.DataAnnotations;
 

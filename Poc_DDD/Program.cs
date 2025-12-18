@@ -2,10 +2,17 @@ using Aplication;
 using Infraestricture.Persistencia.DBContext.AppDBContext;
 using Infraestructure;
 using Infrastructure;
-using static System.Net.Mime.MediaTypeNames;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var connectionString =
+    builder.Configuration.GetConnectionString("DefaultConnection")
+    ?? throw new InvalidOperationException("Connection string not found");
+
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(connectionString)
+);
 
 var services = builder.Services;
 

@@ -15,6 +15,7 @@ namespace Infraestructure.Querys
 
         public Task<ProductDto> Add(string productId)
         {
+
             throw new NotImplementedException();
         }
 

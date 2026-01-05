@@ -1,4 +1,4 @@
-﻿using Aplication.IRepository;
+﻿using Aplication.Interfaces;
 using Infra.Events.EventBus;
 using Infraestructure.Interfaces;
 using Infraestructure.Querys;

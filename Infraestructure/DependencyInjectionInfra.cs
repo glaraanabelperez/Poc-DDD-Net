@@ -11,7 +11,7 @@ public static class DependencyInjectionInfra
     public static IServiceCollection AddInfrastructure(this IServiceCollection services)
     {
         services.AddScoped<IProductRepository, ProductRepository>();
-        services.AddScoped<IRabbitPublisherToInventario, RabbitPublisherToInventario>();
+        services.AddScoped<IRabbitPublisherToAlmacen, RabbitPublisherToAlmacen>();
         //dbContext
         return services;
     }

@@ -5,11 +5,11 @@ using System.Text.Json;
 
 namespace Infra.Events.EventBus
 {
-    public class RabbitPublisherToInventario : IRabbitPublisherToInventario
+    public class RabbitPublisherToAlmacen : IRabbitPublisherToAlmacen
     {
         private readonly IConnection _connection;
 
-        public RabbitPublisherToInventario(CancellationToken cancellationToken = default)
+        public RabbitPublisherToAlmacen(CancellationToken cancellationToken = default)
         {
             var factory = new ConnectionFactory
             {

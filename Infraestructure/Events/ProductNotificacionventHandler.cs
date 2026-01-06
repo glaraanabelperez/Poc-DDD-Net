@@ -7,9 +7,9 @@ namespace Infraestructure.Events
     public class ProductNotificacionventHandler
     : INotificationHandler<ProductNotificationEventModel>
     {
-        private readonly IRabbitPublisherToInventario publisher_;
+        private readonly IRabbitPublisherToAlmacen publisher_;
 
-        public ProductNotificacionventHandler(IRabbitPublisherToInventario publisher)
+        public ProductNotificacionventHandler(IRabbitPublisherToAlmacen publisher)
         {
             publisher_ = publisher;
         }

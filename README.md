@@ -3,7 +3,7 @@ DESARROLLO Y POC EN PROCESO
 
 📘  ## POC – .NET Core | DDD + CQRS + RabbitMQ + EF Core
 
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/16e7f6ba-81b2-4ef8-87db-ff986f30d296" />
+![ddd](https://github.com/user-attachments/assets/7b4f56ba-93c6-40e6-9745-fe4aa3d48be6)
 
 
 

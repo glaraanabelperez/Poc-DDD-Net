@@ -1,9 +1,22 @@
 ﻿
 DESARROLLO Y POC EN PROCESO
 
-📘  ## POC – .NET Core | DDD + CQRS + RabbitMQ + EF Core
+Metodologia DDD
+🧠 ##Regla
+El dominio manda el cambio.
+La arquitectura decide hasta dónde llega.
 
-![ddd](https://github.com/user-attachments/assets/7b4f56ba-93c6-40e6-9745-fe4aa3d48be6)
+📘 ##Lenguaje Obicuo
+Producto puede tener garantia o no.
+Si tiene garantia si o si debe tener identificador de proveedor.
+Proveedor esta fuera del alcance.
+
+📘  ## Tecnologia, patrones (de mensajeria, de comportamiento, de responsabilidad) utilizado principalmente: .NET Core | DDD + (CQRS + RabbitMQ , MediaTR)+ (Persistencia) EF Core
+
+📘  ## Arquitectura Microservicios. Casos de uso
+*Gateway, puerta de entrada
+*Puede haber Un BFF por cada consumidor. 
+*Si el cliente necesita crear proveedor, se redirige al bff correspondiente.
 
 
 
@@ -34,12 +47,6 @@ Dependencias:
 
  Infrastructure → Application
 
-
- 
-
-📦 # Tecnologías Principales
-
-🟣 .NET 8, EF, Sql Server, RabbitMQ, librerias .Net
 
 ##//
 

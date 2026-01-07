@@ -1,5 +1,6 @@
 ﻿
 DESARROLLO Y POC EN PROCESO
+<img width="939" height="683" alt="image" src="https://github.com/user-attachments/assets/5ffd97dd-11f7-41e8-9271-affb2b5c6bbd" />
 
 Metodologia DDD
 🧠 ##Regla

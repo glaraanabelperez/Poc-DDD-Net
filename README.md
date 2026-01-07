@@ -6,7 +6,7 @@ Metodologia DDD
 El dominio manda el cambio.
 La arquitectura decide hasta dónde llega.
 
-📘 ##Lenguaje Obicuo
+📘 ##Lenguaje Ubicuo
 Producto puede tener garantia o no.
 Si tiene garantia si o si debe tener identificador de proveedor.
 Proveedor esta fuera del alcance.

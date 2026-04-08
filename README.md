@@ -2,7 +2,7 @@
 DESARROLLO Y POC EN PROCESO
 <img width="939" height="683" alt="image" src="https://github.com/user-attachments/assets/5ffd97dd-11f7-41e8-9271-affb2b5c6bbd" />
 
-Metodologia DDD
+Metodologia DDD Prueba de concepto
 🧠 ##Regla
 El dominio manda el cambio.
 La arquitectura decide hasta dónde llega.
@@ -12,14 +12,10 @@ Producto puede tener garantia o no.
 Si tiene garantia si o si debe tener identificador de proveedor.
 Proveedor esta fuera del alcance.
 
-📘  ## Tecnologia, patrones (de mensajeria, de comportamiento, de responsabilidad) utilizado principalmente: .NET Core | DDD + (CQRS + RabbitMQ , MediaTR)+ (Persistencia) EF Core
+## Tecnologia: Ado Net, mediaTR , RarbbitMQ.
 
-📘  ## Arquitectura Microservicios. Casos de uso
-*Gateway, puerta de entrada
-*Puede haber Un BFF por cada consumidor. 
-*Si el cliente necesita crear proveedor, se redirige al bff correspondiente.
-
-
+## Arquitectura Microservicios, CQRS,
+## Metodologia DDD
 
 ✨ ## Descripción del Proyecto
 
@@ -28,7 +24,7 @@ Este proyecto es una prueba de concepto (POC) orientada a demostrar una arquitec
 -Arquitectura de Microservicios
 -Metodologia Domain-Driven Design (DDD)
 
--Patron de responsabilidad: CQRS para la separacion Commands/Querys.
+-Arquitectura de responsabilidad: CQRS para la separacion Commands/Querys.
 -Patron de comportamiento: MediatR, para publicar la creacion de producto a la capa de  a infra y asi realizar la persistencia en la BBDD.
 -Patron de comunicacion: Mensajería asincrónica con RabbitMQ, para la notificacion al MS Almacen
 
